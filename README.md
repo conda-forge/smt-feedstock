@@ -14,14 +14,16 @@ Summary: surrogate model toolbox
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/smt-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/smt-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/smt-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/smt-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/smt-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/smt-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/smt-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/smt-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/smt-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/smt-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/smt-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/smt-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/smt/badges/version.svg)](https://anaconda.org/conda-forge/smt)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/smt/badges/downloads.svg)](https://anaconda.org/conda-forge/smt)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-smt-green.svg)](https://anaconda.org/conda-forge/smt) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/smt.svg)](https://anaconda.org/conda-forge/smt) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/smt.svg)](https://anaconda.org/conda-forge/smt) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/smt.svg)](https://anaconda.org/conda-forge/smt) |
 
 Installing smt
 ==============
