@@ -1,4 +1,4 @@
-{% set version = "0.1" %}
+{% set version = "0.2.1" %}
 
 package:
   name: smt
@@ -7,7 +7,7 @@ package:
 source:
   fn: smt-{{ version }}.tar.gz
   url: https://github.com/SMTorg/smt/archive/v{{ version }}.tar.gz
-  sha256: 784d9f482cdc2e0eadad64da600e27ae5390ccb09671889bdd659f4bc0aa6908
+  sha256: 6f62c5cdb9414e3adbc24c8908c881f98e77d2e49f5d0bb51ae7a5ce63ae2a78
   patches:
     # https://github.com/SMTorg/smt/pull/67
     - setuptools.patch
@@ -19,7 +19,7 @@ source:
     - nominmax.patch
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
