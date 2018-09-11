@@ -8,19 +8,10 @@ source:
   fn: smt-{{ version }}.tar.gz
   url: https://github.com/SMTorg/smt/archive/v{{ version }}.tar.gz
   sha256: 6f62c5cdb9414e3adbc24c8908c881f98e77d2e49f5d0bb51ae7a5ce63ae2a78
-  patches:
-    # https://github.com/SMTorg/smt/pull/67
-    - setuptools.patch
-    # https://github.com/SMTorg/smt/pull/70
-    - cython.patch
-    # https://github.com/SMTorg/smt/pull/71
-    - cxx11.patch
-    # https://github.com/SMTorg/smt/pull/72
-    - nominmax.patch
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   build:
@@ -51,8 +42,7 @@ test:
 about:
   home: https://github.com/SMTorg/smt
   license: BSD 3-Clause
-  # https://github.com/SMTorg/smt/issues/68
-  #license_file: COPYING
+  license_file: LICENSE.txt
   summary: surrogate model toolbox
 
 extra:
