@@ -34,9 +34,10 @@ requirements:
 test:
   imports:
     - smt
-    - smt.methods
+    - smt.surrogate_models
     - smt.problems
-    - smt.sampling
+    - smt.sampling_methods
+    - smt.utils
 
 about:
   home: https://github.com/SMTorg/smt
