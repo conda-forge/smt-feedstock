@@ -18,18 +18,17 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
+    - pip
     - setuptools
     - cython
     - python
-    - numpy        # [not (win and py36)]
-    - numpy         # [win and py36]
+    - numpy
 
   run:
     - python
     - pydoe
     - scikit-learn
-    - {{ pin_compatible('numpy') }}   # [not (win and py36)]
-    - {{ pin_compatible('numpy') }}   # [win and py36]
+    - {{ pin_compatible('numpy') }}
     - six
 
 test:
