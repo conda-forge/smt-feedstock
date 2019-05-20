@@ -1,4 +1,4 @@
-{% set version = "0.2.2" %}
+{% set version = "0.3.1" %}
 
 package:
   name: smt
@@ -7,10 +7,10 @@ package:
 source:
   fn: smt-{{ version }}.tar.gz
   url: https://github.com/SMTorg/smt/archive/v{{ version }}.tar.gz
-  sha256: f2ff0d1ad178b15f60c7984a6db9486c223263f4eb7fe2b670b1de64d9ebc4ec
+  sha256: 39239384b94e59dcbae5e3722577adc31496577079b5d87088bc80eba89afaf0
 
 build:
-  number: 1000
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   skip: true  # [py35]
 
@@ -32,6 +32,7 @@ requirements:
     - scikit-learn
     - {{ pin_compatible('numpy') }}
     - six
+    - matplotlib
 
 test:
   imports:
