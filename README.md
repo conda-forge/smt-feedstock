@@ -199,5 +199,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@jschueller](https://github.com/jschueller/)
+* [@relf](https://github.com/relf/)
 
