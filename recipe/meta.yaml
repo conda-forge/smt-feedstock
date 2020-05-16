@@ -10,7 +10,7 @@ source:
   sha256: 900d77f04c34a29959b18ec486cd5b5c7b25ea1a626215726c5110bea68e3fa9
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   skip: true  # [py35]
 
@@ -32,7 +32,7 @@ requirements:
     - scikit-learn
     - {{ pin_compatible('numpy') }}
     - six
-    - matplotlib
+    - matplotlib-base
 
 test:
   imports:
