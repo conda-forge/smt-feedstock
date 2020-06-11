@@ -45,7 +45,7 @@ test:
 
 about:
   home: https://github.com/SMTorg/smt
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_file: LICENSE.txt
   summary: surrogate model toolbox
 
