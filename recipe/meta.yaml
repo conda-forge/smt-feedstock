@@ -1,4 +1,4 @@
-{% set version = "0.5.3" %}
+{% set version = "0.6.0" %}
 
 package:
   name: smt
@@ -6,8 +6,8 @@ package:
 
 source:
   fn: smt-{{ version }}.tar.gz
-  url: https://github.com/SMTorg/smt/archive/v{{ version }}.tar.gz
-  sha256: 7fe30b5a4fb47372fae0bf499af3150634a74b78744afff2a759cb7afc2d5d4b
+  url: https://github.com/SMTorg/smt/archive/{{ version }}.tar.gz
+  sha256: 604b12bc0205535279ac708d9d6251ed72f5d61a4910ea819f09cfd850f29449
 
 build:
   number: 0
@@ -32,7 +32,7 @@ requirements:
     - pydoe2
     - scikit-learn
     - {{ pin_compatible('numpy') }}
-    - six
+    - scipy
     - matplotlib-base
 
 test:
