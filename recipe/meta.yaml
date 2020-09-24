@@ -32,7 +32,7 @@ requirements:
     - pydoe2
     - scikit-learn
     - {{ pin_compatible('numpy') }}
-    - six
+    - scipy
     - matplotlib-base
 
 test:
