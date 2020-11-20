@@ -1,4 +1,4 @@
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: smt
@@ -6,11 +6,11 @@ package:
 
 source:
   fn: smt-{{ version }}.tar.gz
-  url: https://github.com/SMTorg/smt/archive/{{ version }}.tar.gz
-  sha256: 604b12bc0205535279ac708d9d6251ed72f5d61a4910ea819f09cfd850f29449
+  url: https://github.com/SMTorg/smt/archive/v{{ version }}.tar.gz
+  sha256: 5fa5a953c0fa0f5d21c2da7b2f2b62994ca5d53ae3939c801a4f49194a8435b0
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   skip: true  # [py35]
 
