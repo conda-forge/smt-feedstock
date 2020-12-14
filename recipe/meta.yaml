@@ -1,4 +1,4 @@
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 
 package:
   name: smt
@@ -7,7 +7,7 @@ package:
 source:
   fn: smt-{{ version }}.tar.gz
   url: https://github.com/SMTorg/smt/archive/v{{ version }}.tar.gz
-  sha256: 5fa5a953c0fa0f5d21c2da7b2f2b62994ca5d53ae3939c801a4f49194a8435b0
+  sha256: 97a409acd6eb1efdfd06e8f906fc9172e879853abaed20e2f33b17819f017c99
 
 build:
   number: 0
