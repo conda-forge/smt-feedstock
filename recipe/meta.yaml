@@ -28,7 +28,7 @@ requirements:
 
   run:
     - python
-    - pydoe2
+    - pydoe3
     - scikit-learn
     - {{ pin_compatible('numpy') }}
     - scipy
