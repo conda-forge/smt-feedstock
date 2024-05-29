@@ -10,7 +10,7 @@ source:
   sha256: 4a9b639cadd1320d13cb936d2947568658fc76744cfd49468d3b4678dfbbf185
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   skip: true  # [py<37]
 
@@ -35,7 +35,6 @@ requirements:
     - python
     - pydoe3
     - scikit-learn
-    - {{ pin_compatible('numpy') }}
     - scipy
     - jenn
     - matplotlib-base
