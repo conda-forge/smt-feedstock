@@ -1,4 +1,4 @@
-{% set version = "0.1" %}
+{% set version = "0.2" %}
 
 package:
   name: smt
@@ -28,31 +28,29 @@ requirements:
     - setuptools
     - cython
     - python
-    - numpy 1.9.*  # [not (win and py36)]
-    - numpy 1.11.*  # [win and py36]
-
+    - numpy
   run:
     - python
-    - pydoe
+    - numpy
+    - pydoe3
     - scikit-learn
-    - numpy >=1.9  # [not (win and py36)]
-    - numpy >=1.11  # [win and py36]
-    - six
+    - jenn
 
 test:
   imports:
     - smt
-    - smt.methods
+    - smt.surrogate_models
+    - smt.kernels
     - smt.problems
-    - smt.sampling
+    - smt.sampling_methods
+    - smt.applications
 
 about:
   home: https://github.com/SMTorg/smt
   license: BSD 3-Clause
-  # https://github.com/SMTorg/smt/issues/68
-  #license_file: COPYING
   summary: surrogate model toolbox
 
 extra:
   recipe-maintainers:
     - jschueller
+    - relf
