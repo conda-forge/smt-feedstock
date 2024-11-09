@@ -5,8 +5,6 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/smt-feedstock/b
 
 Home: https://github.com/SMTorg/smt
 
-Package license: BSD 3-Clause
-
 Summary: surrogate model toolbox
 
 Current build status
