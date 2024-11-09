@@ -27,6 +27,7 @@ jobs:
     UPLOAD_TEMP: D:\\tmp
 
   steps:
+
     - script: |
         call ".scripts\run_win_build.bat"
       displayName: Run Windows build
