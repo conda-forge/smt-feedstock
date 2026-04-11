@@ -1,4 +1,4 @@
-{% set version = "2.3.0" %}
+{% set version = "2.13.0" %}
 
 package:
   name: smt
@@ -7,7 +7,7 @@ package:
 source:
   fn: smt-{{ version }}.tar.gz
   url: https://github.com/SMTorg/smt/archive/v{{ version }}.tar.gz
-  sha256: 457a3e1f89c17df71554215ac9ebd8446c31feda35251d90345b845080736749
+  sha256: 265eef1d93e14f992dacf62b088908bc1b42fd1ff3a2674feaf61130d4f929f8
 
 build:
   number: 1
@@ -17,30 +17,33 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
+    - cross-python_{{ target_platform }}    # [build_platform != target_platform]
+    - python                                # [build_platform != target_platform]
+    - cython                                # [build_platform != target_platform]
+    - numpy                                 # [build_platform != target_platform]    
   host:
     - pip
     - setuptools
     - cython
     - python
     - numpy
-
-
   run:
     - python
+    - numpy
     - pydoe3
     - scikit-learn
-    - numpy
-    - scipy
-    - matplotlib-base
+    - jenn
 
 test:
   imports:
     - smt
     - smt.surrogate_models
+    - smt.kernels
     - smt.problems
     - smt.sampling_methods
-    - smt.utils
+    - smt.applications
 
 about:
   home: https://github.com/SMTorg/smt
