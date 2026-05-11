@@ -10,9 +10,9 @@ source:
   sha256: fcb49ecaecda04da1b7d8fbfa0e5718bc48cda614de860530431037bb7d3f622
 
 build:
-  number: 0
+  number: 4
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
-  skip: true  # [py<37]
+  skip: true  # [py<311]
 
 requirements:
   build:
@@ -32,7 +32,7 @@ requirements:
   run:
     - python
     - numpy
-    - pydoe3
+    - pydoe
     - scikit-learn
     - jenn
 
