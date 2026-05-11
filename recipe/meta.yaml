@@ -1,4 +1,4 @@
-{% set version = "2.13.0" %}
+{% set version = "2.14.0" %}
 
 package:
   name: smt
@@ -7,12 +7,12 @@ package:
 source:
   fn: smt-{{ version }}.tar.gz
   url: https://github.com/SMTorg/smt/archive/v{{ version }}.tar.gz
-  sha256: 265eef1d93e14f992dacf62b088908bc1b42fd1ff3a2674feaf61130d4f929f8
+  sha256: fcb49ecaecda04da1b7d8fbfa0e5718bc48cda614de860530431037bb7d3f622
 
 build:
   number: 5
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
-  skip: true  # [py<37]
+  skip: true  # [py<311]
 
 requirements:
   build:
@@ -32,7 +32,7 @@ requirements:
   run:
     - python
     - numpy
-    - pydoe3
+    - pydoe
     - scikit-learn
     - jenn
 
